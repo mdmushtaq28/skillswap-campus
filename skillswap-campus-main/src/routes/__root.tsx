@@ -40,7 +40,6 @@ export const Route = createRootRoute({
       { property: "og:description", content: "Trade skills with students on your campus. Teach, learn, and earn — money or barter." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {

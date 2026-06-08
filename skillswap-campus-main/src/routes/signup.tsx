@@ -59,7 +59,7 @@ function SignupPage() {
           </div>
           <div className="space-y-1.5">
             <Label htmlFor="password">Password</Label>
-            <Input id="password" type="password" required value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} />
+            <Input id="password" type="password" required value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} autoComplete="new-password" />
           </div>
           <Button className="w-full rounded-full" disabled={loading}>{loading ? "Creating…" : "Create account"}</Button>
         </form>

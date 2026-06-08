@@ -42,7 +42,7 @@ function LoginPage() {
           </div>
           <div className="space-y-1.5">
             <Label htmlFor="password">Password</Label>
-            <Input id="password" type="password" required value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} />
+            <Input id="password" type="password" required value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} autoComplete="current-password" />
           </div>
           <Button className="w-full rounded-full" disabled={loading}>{loading ? "Signing in…" : "Sign in"}</Button>
         </form>

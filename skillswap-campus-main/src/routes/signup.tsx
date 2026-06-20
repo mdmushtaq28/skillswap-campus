@@ -47,19 +47,19 @@ function SignupPage() {
         <form onSubmit={submit} className="space-y-4">
           <div className="space-y-1.5">
             <Label htmlFor="name">Full name</Label>
-            <Input id="name" required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} />
+            <Input id="name" name="name" required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} autoComplete="name" />
           </div>
           <div className="space-y-1.5">
             <Label htmlFor="college">College</Label>
-            <Input id="college" placeholder="e.g. IIT Bombay" value={form.college} onChange={(e) => setForm({ ...form, college: e.target.value })} />
+            <Input id="college" name="college" placeholder="e.g. IIT Bombay" value={form.college} onChange={(e) => setForm({ ...form, college: e.target.value })} />
           </div>
           <div className="space-y-1.5">
             <Label htmlFor="email">Email</Label>
-            <Input id="email" type="email" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} />
+            <Input id="email" name="email" type="email" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} />
           </div>
           <div className="space-y-1.5">
             <Label htmlFor="password">Password</Label>
-            <Input id="password" type="password" required value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} autoComplete="new-password" />
+            <Input id="password" name="password" type="password" required value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} autoComplete="new-password" />
           </div>
           <Button className="w-full rounded-full" disabled={loading}>{loading ? "Creating…" : "Create account"}</Button>
         </form>
